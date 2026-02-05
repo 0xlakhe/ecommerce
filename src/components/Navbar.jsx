@@ -6,7 +6,7 @@ import { LinkIcon, Menu, Search, ShoppingCart, User, X } from "lucide-react";
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="flex items-center justify-between pt-4 text-gray-800">
+    <div className="flex items-center justify-between py-5 text-gray-800 ">
       <Link to="/">
         <img src={assets.logo} alt="logo" />
       </Link>
