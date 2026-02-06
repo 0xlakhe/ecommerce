@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { assets } from "../assets/assets";
 import { Link, NavLink } from "react-router-dom";
 import { LinkIcon, Menu, Search, ShoppingCart, User, X } from "lucide-react";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
+  const { showSearch, setShowSearch } = useContext(ShopContext);
   const [visible, setVisible] = useState(false);
   return (
     <div className="flex items-center justify-between py-5 text-gray-800 ">
@@ -41,7 +43,11 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div className="righ-side flex gap-4">
-        <Search className="cursor-pointer" size={28} />
+        <Search
+          onClick={() => setShowSearch(!showSearch)}
+          className="cursor-pointer"
+          size={28}
+        />
         <div className="group relative">
           <User className="cursor-pointer" size={28} />
           <div className="dropdown-menu absolute right-0 group-hover:block hidden gap-5 whitespace-nowrap pt-4">
