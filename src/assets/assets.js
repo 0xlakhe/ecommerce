@@ -8,8 +8,12 @@ const products = [
     description:
       "A heavy-weight organic cotton hoodie designed for comfort and durability.",
     price: 65.0,
-    image:
+    image: [
       "https://images.unsplash.com/photo-1633966887768-64f9a867bdba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHNoaXJ0fGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hpcnRzfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hpcnRzfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNoaXJ0c3xlbnwwfHwwfHx8MA%3D%3D",
+    ],
     category: "Men",
     subcategory: "Winterwear",
     sizes: ["S", "M", "L", "XL"],
@@ -22,8 +26,9 @@ const products = [
     description:
       "Breathable mesh upper with reactive foam cushioning for long-distance runs.",
     price: 120.0,
-    image:
+    image: [
       "https://plus.unsplash.com/premium_photo-1675186049366-64a655f8f537?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D",
+    ],
     category: "Women",
     subcategory: "Winterwear",
     sizes: ["8", "9", "10", "11", "12"],
@@ -35,8 +40,9 @@ const products = [
     name: "Minimalist Leather Wallet",
     description: "Full-grain leather with RFID protection and a slim profile.",
     price: 45.0,
-    image:
+    image: [
       "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D",
+    ],
     category: "Kids",
     subcategory: "Winterwear",
     sizes: ["One Size"],
@@ -49,8 +55,9 @@ const products = [
     description:
       "Classic fit denim jacket featuring vintage wash and reinforced stitching.",
     price: 89.99,
-    image:
+    image: [
       "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D",
+    ],
     category: "Men",
     subcategory: "Winterwear",
     sizes: ["M", "L", "XL"],
@@ -62,8 +69,9 @@ const products = [
     name: "Yoga Comfort Leggings",
     description: "High-waisted, moisture-wicking fabric with four-way stretch.",
     price: 55.0,
-    image:
+    image: [
       "https://plus.unsplash.com/premium_photo-1675186049409-f9f8f60ebb5e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D",
+    ],
     category: "Women",
     subcategory: "Bottomwear",
     sizes: ["XS", "S", "M", "L"],
@@ -76,8 +84,9 @@ const products = [
     description:
       "Ultra-lightweight and vacuum insulated to keep drinks cold for 24 hours.",
     price: 38.0,
-    image:
+    image: [
       "https://plus.unsplash.com/premium_photo-1675186049419-d48f4b28fe7c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D",
+    ],
     category: "Kids",
     subcategory: "Bottomwear",
     sizes: ["500ml", "750ml", "1L"],
@@ -89,8 +98,9 @@ const products = [
     name: "Classic Crew Neck Tee",
     description: "Essential everyday tee made from 100% Pima cotton.",
     price: 25.0,
-    image:
+    image: [
       "https://plus.unsplash.com/premium_photo-1675186049297-035b3f692c04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D",
+    ],
     category: "Men",
     subcategory: "Bottomwear",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -103,8 +113,9 @@ const products = [
     description:
       "Water-resistant canvas with a padded laptop sleeve and leather accents.",
     price: 110.0,
-    image:
+    image: [
       "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D",
+    ],
     category: "Kids",
     subcategory: "Topwear",
     sizes: ["15-inch", "17-inch"],
@@ -116,8 +127,9 @@ const products = [
     name: "All-Weather Beanie",
     description: "Soft merino wool blend that stays warm even when wet.",
     price: 22.0,
-    image:
+    image: [
       "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D",
+    ],
     category: "Women",
     subcategory: "Topwear",
     sizes: ["One Size"],
@@ -130,8 +142,9 @@ const products = [
     description:
       "Tracks heart rate, sleep patterns, and daily activity with 5-day battery life.",
     price: 199.0,
-    image:
+    image: [
       "https://images.unsplash.com/photo-1693443688057-85f57b872a3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D",
+    ],
     category: "Kids",
     subcategory: "Topwear",
     sizes: ["38mm", "42mm"],
