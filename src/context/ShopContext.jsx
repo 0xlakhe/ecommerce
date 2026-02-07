@@ -32,9 +32,9 @@ const ShopContextProvider = (props) => {
     setCartItems(cartData);
   };
 
-  useEffect(() => {
-    console.log(cartItems);
-  }, [cartItems]);
+  // useEffect(() => {
+  //   console.log(cartItems);
+  // }, [cartItems]);
 
   const getCartCount = () => {
     let totalCount = 0;
