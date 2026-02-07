@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { RiStarFill, RiStarLine } from "@remixicon/react";
+import RelatedProducts from "../components/RelatedProducts";
 
 const Product = () => {
   const { productId } = useParams();
@@ -109,6 +110,7 @@ const Product = () => {
       </div>
 
       {/* display related products */}
+      <RelatedProducts productId={productId} />
     </div>
   ) : (
     <div className="opacity-100 bg-black h-100 text-white">hello</div>
