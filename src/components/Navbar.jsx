@@ -5,7 +5,7 @@ import { LinkIcon, Menu, Search, ShoppingCart, User, X } from "lucide-react";
 import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
-  const { showSearch, setShowSearch } = useContext(ShopContext);
+  const { showSearch, setShowSearch, getCartCount } = useContext(ShopContext);
   const [visible, setVisible] = useState(false);
   return (
     <div className="flex items-center justify-between py-5 text-gray-800 ">
@@ -58,9 +58,9 @@ const Navbar = () => {
         </div>
         <Link to="/cart" className="relative">
           <ShoppingCart size={28} />
-          <div className="absolute  -right-1.5 -bottom-1.5 text-[12px] flex justify-center items-center bg-black rounded-xl text-white w-5 h-5">
-            10
-          </div>
+          <p className="absolute  -right-1.5 -bottom-1.5 text-[12px] flex justify-center items-center bg-black rounded-xl text-white w-5 h-5">
+            {getCartCount()}
+          </p>
         </Link>
         <div>
           <Menu
